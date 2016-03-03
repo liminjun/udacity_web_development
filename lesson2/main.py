@@ -43,6 +43,7 @@ class MainHandler(webapp2.RequestHandler):
     def post(self):
     	self.response.out.write("That's a totally valid day")
 
+    	
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
